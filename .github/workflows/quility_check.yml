@@ -1,12 +1,12 @@
-name: Unit Tests
+name: Code Quality Check
 
 on:
-  pull_request:
+  push:
     branches:
       - dev
 
 jobs:
-  unit_tests:
+  flake8:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -20,5 +20,5 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
 
-      - name: Run Unit Tests
-        run: pytest test/test.py
+      - name: Run pylint
+        run: pylint app.py
