@@ -20,5 +20,5 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
 
-      - name: Run flake8
-        run: flake8 --max-line-length=88 .
+      - name: Run pylint
+        run: pylint app.py
