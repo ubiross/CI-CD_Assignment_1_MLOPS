@@ -6,7 +6,6 @@ on:
       - dev
     types:
       - opened 
-
 jobs:
   unit_tests:
     runs-on: ubuntu-latest
