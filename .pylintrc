@@ -1,0 +1,16 @@
+[MASTER]
+
+[MESSAGES CONTROL]
+# Enable or disable specific error messages
+disable = C0303, C0114, C0116, W0718, E0602
+
+[FORMAT]
+
+[REPORTS]
+
+[BASIC]
+
+[DESIGN]
+
+[TYPECHECK]
+
